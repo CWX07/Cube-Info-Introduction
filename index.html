@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cube Info - Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./cubeinfo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <h1>Cube Info</h1>
+      </div>
+      <ul class="nav__links" id="idnav__links">
+        <li><a href="https://cwx07.github.io/Cube-Info-Home">Home</a></li>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-Introduction/index.html"
+            >Introduction</a>
+        </li>
+        <div class="dropdown">
+          <button class="dropbtn">Notation</button>
+          <div class="dropdown-content">
+            <a href="https://cwx07.github.io/Cube-Info-BasicN"
+              >Basic Notation</a>
+            <a href="https://cwx07.github.io/Cube-Info-DoubleN"
+              >Double Layer Notation</a>
+            <a href="https://cwx07.github.io/Cube-Info-OtherN"
+              >Other Notation</a>
+          </div>
+        </div>
+        <li><a href="https://cwx07.github.io/Cube-Info-OLL">OLL</a></li>
+        <li><a href="https://cwx07.github.io/Cube-Info-PLL">PLL</a></li>
+      </ul>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button> 
+        </div>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <li><a href="https://cwx07.github.io/Cube-Info-Home">Home</a></li>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-Introduction/index.html"
+            >Introduction</a>
+        </li>
+            <li><a href="https://cwx07.github.io/Cube-Info-BasicN"
+              >Basic Notation</a></li>
+            <li><a href="https://cwx07.github.io/Cube-Info-DoubleN"
+              >Double Layer Notation</a></li>
+            <li><a href="https://cwx07.github.io/Cube-Info-OtherN"
+              >Other Notation</a></li>
+        <li><a href="https://cwx07.github.io/Cube-Info-OLL">OLL</a></li>
+        <li><a href="https://cwx07.github.io/Cube-Info-PLL">PLL</a></li>
+        </div>
+    </nav>
+
+ <section id="home" class="home__section">
+  <div class="container">
+    <div class="home__header">
+      <h1>Introduction of CFOP Method</h1>
+  </div>
+  </section>
+
+  <section class="guide">
+    <div class="guide__header">
+       <h1><u>CFOP Method</u></h1>
+    </div>
+    <div class="guide__paragraph">
+    <p>
+      The CFOP method which stands for Cross, F2L, OLL and PLL is a commonly used speedsolving
+      method that was invented by Jessica Fridrich during the early 1980s.The method works on a 
+      layer-by-layer system, first solving a cross typically on the bottom, continuing to solve the 
+      first two layers (F2L), orienting the last layer (OLL), and finally permuting the last layer (PLL).
+    </p>
+  </div>
+  </section>
+
+  <section class="about__section">
+    <div class="container">
+      <h1><u>Cross</u></h1>
+      <div class="about__info">
+        <img
+          src="./img/cross.png"
+          width="200px"
+          height="200px"
+          alt="cross"
+          class="cross"
+        />
+        <p>
+          This first stage involves solving the four edge pieces in one outer layer of the puzzle, 
+          centering around a commonly coloured centre piece. Many speedcubers usually solve the cross 
+          on the bottom side to avoid cube rotations and to get an overall better view.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about__section__2">
+    <div class="container">
+      <h1><u>F2L (First 2 Layers)</u></h1>
+      <div class="about__info_2">
+      <p>
+        In F2L, corner and edge pieces are paired up and later moved to their correct location. 
+        There are 42 standard cases for each corner-edge pair including the case where it is already 
+        solved. It can also be done intuitively.
+      </p>
+        <img
+          src="./img/f2l.png"
+          width="200px"
+          height="200px"
+          alt="f2l"
+          class="f2l"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="about__section">
+    <div class="container">
+      <h1><u>OLL (Orientation of the Last Layer)</u></h1>
+      <div class="about__info">
+        <img
+          src="./img/oll.png"
+          width="200px"
+          height="200px"
+          alt="oll"
+          class="oll"
+        />
+        <p>
+          This stage involves manipulating the top layer so that all the pieces there have the same 
+          colour on top. This stage involves a total of 57 algorithms. A simpler version, called "two-look OLL" 
+          orients edges first and corners afterwards.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about__section_2">
+    <div class="container">
+      <h1><u>PLL (Permutation of the Last Layer)</u></h1>
+      <div class="about__info_2">
+      <p>
+        The final stage involves moving the pieces of the top layer to solve the cube. There is a 
+        total of 21 algorithms. They are name using letter names, usually based on the arrow that represent each 
+        pieces that swap around.
+      </p>
+        <img
+          src="./img/pll.png"
+          width="200px"
+          height="200px"
+          alt="pll"
+          class="pll"
+        />
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.display = "none";
+      document.getElementById("navlogoid").style.display ="none";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.display = "block";
+      document.getElementById("navlogoid").style.display ="block";
+    }
+    </script>
+  </body>
+</html>
+
